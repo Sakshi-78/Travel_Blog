@@ -1,0 +1,732 @@
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    font-family: sans-serif;
+    font-size:2.5rem;
+    font-weight: bolder;
+    color:white;
+    text-transform: uppercase;
+    margin-left:100px;
+    padding:15px;
+}
+header{
+    display: flex;
+    background-color: black;
+    
+}
+header .navbar a{
+    color:white;
+    font-size: 20px;
+    margin-left:70px;
+}
+
+header .navbar a:hover{
+    color:rgb(203, 203, 203);
+}
+header .icon {
+    margin-left:200px;
+}
+header .icon i{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    margin-top:25px;
+}
+header .icon i:hover{
+    color:rgb(203, 203, 203);
+}
+header .search-bar-container{
+    position:absolute;
+    top:100%;
+    left:-500px;
+    right:0;
+    margin-top:15px;
+    padding:1.5rem 2rem;
+    background:black;
+    border-top:.2rem solid rgb(78, 77, 77);
+    display:flex;
+    align-items: center;
+   clip-path: polygon(0 0,100% 0, 100% 0,0 0);   /* //remove seach bar from browser */
+    /* z-index: 1000; */
+}
+header .search-bar-container.active{
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);  /* show the search bar on browser when click on icon*/
+}
+header .search-bar-container #search-bar{
+    width:100%;
+    padding:10px;
+    text-transform: none;
+    color:#333;
+    font-size: 15px;
+    border-radius: 10px;
+}
+header .search-bar-container label{
+    color:white;
+    cursor:pointer;
+    font-size:25px;
+    margin-left:10px;
+}
+header .search-bar-container label:hover{
+    color:rgb(203, 203, 203);
+}
+.home,.gallery,.blog,.about{
+    background-image: url("https://www.cuddlynest.com/blog/wp-content/uploads/2021/01/agafay-desert-cuddlynest.jpg");
+    background-size:cover;  
+    height:750px; 
+}
+.nav{
+    background-color: black;
+}
+.navbar{
+    width:100%;
+    height:50%;
+    color:white;
+    display:flex;
+    position:sticky;
+    top:0;
+    height:60px;
+    margin-left:200px;
+    /* background-color: rgb(87, 73, 73); */
+}
+.navitem{
+    color:white;
+    text-decoration: none;
+    margin-top:25px;
+    margin-left:50px;
+    font-family:sans-serif;
+    font-size: 17px;   
+}
+.login-form-container{
+    position:fixed;
+    top: -120%;
+    left:0;
+    /* z-index:10000; */
+    min-height: 750px;
+    width:100%;
+    background-color: #575555;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form-container form{
+    margin:2px;
+    padding:5px 50px;
+    border-radius:.5rem;
+    background: white;
+    width:30%;
+}
+.login-form-container form h3{
+    font-size:3rem;
+    font-family: sans-serif;
+    color:black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+.login-form-container form .box{
+    width:100%;
+    padding:10px;
+    font-size:15px;
+    color:black;
+    margin:10px 0;
+    border:1px solid black;
+    text-transform: none;
+}
+.login-form-container form #remember{
+    margin-top:20px;
+    font-family: sans-serif;
+    
+}
+.login-form-container form label{
+    font-size:15px;
+    font-family: sans-serif;
+}
+.login-form-container form .logbtn{
+    display: block;
+    margin-left:10px;
+    margin-top:15px;
+    width:100%;
+}
+.login-form-container form p{
+    /* padding:2px 0; */
+    font-size :15px;
+    color:black;
+    margin-bottom:20px;
+}
+.login-form-container form p a{
+    color:grey;
+}
+.login-form-container form p a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position:absolute;
+    top:2rem;
+    right:3rem;
+    font-size:50px;
+    color:white;
+    cursor:pointer;
+
+}
+.login-form-container form.active{
+    top:0;
+}
+.logbtn{
+    display: inline-block;
+    margin-top:1rem;
+    margin-left: 10px;
+    background-color: #232121;
+    color:white;
+    width:100%;
+    padding:5px 5px;
+    border:1px solid black;
+    cursor:pointer;
+    font-size:20px;
+}
+#menu-bar{
+    color:white;
+    border:1px solid white;
+    border-radius:5px;
+    font-size:3rem;
+    padding:5px 5px;
+    cursor:pointer;
+    display:none;
+}
+.subtitle{
+    color:white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top:250px;
+    
+}
+.booking_section{
+    display: flex;
+    margin-bottom:100px;
+}
+.form{
+    margin-left:20px;
+}
+.search{
+    border:1px solid white;
+    /* box-shadow :100px #000000; */
+    background-color: aliceblue;
+    width:400px;
+    height:400px;
+    margin-left:150px;
+    margin-top:100px;
+}
+#place{
+    margin-top:15px;
+    padding:5px;
+    width:90%;
+}
+.book_title{
+    color:black;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size:15px;
+    margin-top:20px;
+}
+.package{
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:70px;
+    color:black;
+}
+
+.location{
+    padding-top:40px;
+    color:grey;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left:650px;
+}
+.img{
+    margin-top:30px;
+    margin-left:50px;
+    width:600px;
+    height:500px;
+}
+.submit{
+    margin-left:120px;
+    margin-top:20px;
+    padding:7px;
+    padding-left:15px;
+    padding-right:15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgb(186, 186, 247);
+    color:white;
+}
+.book{
+    margin-top:50px;
+}
+.title1{
+    color:rgb(113, 105, 105);
+    font-family: sans-serif;
+    font-weight: 20;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:30px;
+    padding:50px;
+}
+.feature{
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:20px;
+}
+.images{
+    background-color:lightgrey;  
+}
+.card{
+    display: flex;
+    flex-wrap:wrap;
+    height:100%; 
+    margin-bottom: 100px;  
+}
+.card1{
+    width:250px;
+    height:300px;
+    margin-left:140px;
+    margin-right: 50px;  
+}
+#img{
+    width:350px;
+    height:230px;    
+}
+#cnt{
+    font-family:sans-serif;
+    margin-left:30px; 
+    font-size:18px;
+    margin-top:-25px; 
+    width:100%;  
+}
+.cards{
+    display: flex;
+    flex-wrap:wrap;
+    height:800px;   
+}
+.offers{
+    color:rgb(113, 105, 105);
+    font-family: sans-serif;
+    font-weight: 20;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:30px;
+    padding:50px;
+
+}
+.offer{
+    color:rgb(113, 105, 105);
+    font-family: sans-serif;
+    font-weight: 20;
+    font-size: 20px;
+   margin-left:450px;
+    margin-bottom:30px;
+    padding:50px;
+}
+.title2{
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 30px;
+    margin-left:600px;
+    margin-bottom:100px;
+    color:black;
+    
+}
+.subtitle1{
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 25px;
+    margin-top:20px;
+    margin-left:45px;
+    color:black;
+}
+.brief{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+    
+}
+.hotel,.guide,.money{
+    width:300px;
+    height:300px;
+    margin-left:150px;
+}
+.booking{
+    display:flex;
+    flex-wrap: wrap;
+}
+.btn{
+    padding:5px;
+    background-color:rgb(227, 214, 214);
+    width:100px;
+    height:30px;
+    margin-left:70px;
+}
+.services{
+   /* background-size: cover; */
+   height:100%; 
+   margin-bottom: -50px; 
+   background-color:white;
+}
+#icons{
+    margin-left:100px;
+    font-size:50px;
+}
+.card2{
+    width:300px;
+    height:180px;
+    margin-left:150px;
+    background-color: white;
+    padding-top:20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    color:rgb(88, 90, 91);
+}
+#img1{
+    width:80px;
+    height:80px;
+    border-radius: 400px;
+}
+.people{
+    display:flex;
+}
+.testimonial{
+    background-color: rgb(230, 230, 230);
+    height:750px;
+}
+.nam{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left:16px;
+    margin-top:20px; 
+    color:black;   
+}
+.trip{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left:275px;
+    margin-top:-30px;
+    color:rgb(88, 90, 91);
+}
+.cont{
+    display: flex;
+    margin-left:180px;
+    margin-top:25px;
+}
+.contact{
+    display:flex;
+    height:400px;
+    background-color: black;
+}
+.title3{
+   margin-top:80px;
+   font-family: sans-serif;
+   font-size: 30px;
+   margin-left:50px;
+   color:white;
+   margin-left:170px;
+}
+.info{
+    width:200px;
+    margin-top:40px;
+    margin-left:170px;
+    color:white;
+}
+.follow{
+    margin-left:130px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top:80px;
+    color:white;
+}
+.place,.letter{
+    margin-left:130px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top:80px;
+    color:white;
+}
+p{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top:15px;
+    color:white;
+}
+.india{
+    margin-top:40px;
+}
+.email{
+    margin-top:40px;
+    padding:8px;
+    width:250px;
+    color:white;
+}
+.subtn{
+    padding:8px;
+    background-color:aqua;
+    width:270px;
+    margin-top:10px;
+}
+.para{
+    width:500px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align:center;
+    margin-left:520px;
+    margin-top:100px;
+}
+.pictures{
+    margin-left:170px;
+    margin-right:100px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+#picture{
+    margin-left:170px;
+    margin-right:100px;
+
+}
+.back{
+    background-color: rgb(202, 200, 197);
+    height:1200px;
+}
+#popular_places{
+    width:350px;
+    height:230px;
+    margin-top:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+
+}
+.blog-info{
+    background-color: rgb(202, 200, 197);
+    height:2000px;
+}
+.card3{
+    height:500px;
+    width:320px;
+    background-color: white;
+    margin-left:150px;
+    margin-top:50px;
+}
+#pic{
+    width:320px;
+    height:220px;   
+}
+#date{
+    color:#000000;
+    width:90px;
+    height:15px;
+}
+
+.star{
+    display:flex;
+    width:10px;
+}
+i{
+   font-size:15px;
+   margin-left:10px;
+   margin-top: 1px;
+}
+.price{
+    font-family: sans-serif;
+    font-size:15px;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+.book-btn{
+    font-family: sans-serif;
+    border:1px solid black;
+    padding:7px 7px;
+    margin-left:10px;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+#name{
+    font-family: sans-serif;
+    font-size: 13px;
+    color:rgb(89, 89, 92);
+    margin-left:10px;
+}
+#heading{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    margin:10px;
+}
+#content{
+    color:rgb(89, 89, 92);
+    font-family: sans-serif;
+    margin:10px;
+}
+#title{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top:50px;
+}
+.section{
+    display:flex;
+}
+.left{
+    width:650px;
+    height:500px;
+    margin-left:100px;
+    margin-top:50px;
+}
+#form{
+    margin-left:20px;
+}
+.contact-info{
+    border: 1px solid black;
+    margin-top:70px;
+    margin-left:50px;
+    width:500px;
+    height:450px; 
+    background-color: rgb(202, 200, 197);
+}
+
+.name,.emails,.number,.subject{
+    padding:7px;
+    width:200px;
+    margin-top:10px;
+    margin-left:150px;
+    text-align: center;
+}
+.text{
+    padding:7px;
+    width:300px;
+    margin-top:10px;
+    margin-left:105px;
+    text-align: center; 
+
+}
+.head{
+    color:black;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.button{
+    padding:7px;
+    margin-left:200px;
+    margin-top:10px;
+    border-radius: 5px;
+   
+}
+.box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-left:150px;
+}
+#date{
+    margin-left: 10px;
+}
+/* .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem black;
+    border:1px solid #fff;
+    border-radius: .5rem;
+    flex:1 1 30rem;
+    height:300px;
+    position:relative;
+}
+.box:hover{
+    top:0;
+} */
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.content{
+    position:absolute;
+    top:-120%;
+    left:0;
+    height:100%;
+    width:50%;
+    text-align:center;
+    background-color: black;
+    padding:2rem;
+    padding-top:5rem;
+}
+
+/* h3{
+    font-size:2.5rem;
+    color:orange;
+} */
+#para{
+    font-size:1.5rem;
+    color:#eee;
+    padding:5rem 0;
+}
+
+@media (max-width:1200px){
+    html{
+        font-size:55%;
+    }
+}
+
+@media (max-width:991px){
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-bar{
+        display:initial;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%;
+        right:0%;
+        left:0%;
+        background-color: #000000;
+        border-top:.1rem solid rgb(255,255,255,.2);
+        padding:1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+    header .navbar.active{
+        clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
+    header .navbar a{
+        display:block;
+        border-radius:.5rem;
+        padding:1.5rem;
+        margin: 1.5rem 0;
+        background:#282828; 
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

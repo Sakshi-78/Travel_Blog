@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <h1 class="logo">TRAVEL</h1>
+            <nav class="navbar">
+            <a class="navitem" href="home.html">Home</a>
+            <a class="navitem" href="gallery.html">Gallery</a>
+            <a class="navitem" href="blog.html">Blog</a>
+            <a class="navitem" href="contacts.html">Contact</a> 
+            <div class="icon">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div> 
+            <form class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </nav>
+        </header>
+        <!-- HEADER SECTION END -->
+    
+        <!-- LOGIN SECTION START-->
+        <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+            <form>
+             <h3>Login</h3>
+             <input type="email" class="box" placeholder="Enter your email">
+             <input type="password" class="box" placeholder="Enter your password">
+             <input type="submit" placeholder="LOGIN" class="logbtn">
+             <input type="checkbox" id="remember">
+             <label for="remember">remember me</label>
+             <p>forgot password? <a href="#">Click here</a></p>
+             <p>Don't have an account? <a href="#">Register now</a></p>
+            </form>
+         </div>
+         <!-- LOGIN SECTION END-->
+    </div>
+        <h1 id="title">CONTACT</h1>
+    <div class="section">
+        <div>
+            <img class="left" src="https://thumbs.dreamstime.com/b/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg">
+        </div>
+        <div id="form">
+            <form class="contact-info">
+                <p class="head">Name</p>
+                <input type="text" class="name" placeholder="Enter Name" name="name" >
+                <p class="head">Email</p>
+                <input type="email" class="emails" placeholder="Enter your Email" name="email">
+                <p class="head">Number</p>
+                <input type="number" class="number" placeholder="Enter your Number" name="number">
+                <p class="head">Subject</p>
+                <input type="text" class="subject" placeholder="Subject" name="subject">
+                <p class="head">Your Views</p>
+                <textarea class="text" placeholder="Hello... Everyone "></textarea>
+                <button class="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
